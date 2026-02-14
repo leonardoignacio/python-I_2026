@@ -16,3 +16,15 @@ i = 2
 divisor = 0
 tipo = 'O número deve ser maior que 2'
 # usaremos o while para criar o loop
+while (i<numero):
+    tipo = 'O número é PRIMO'
+    x = numero % i
+    # Se resto = 0 não é primo
+    if (x==0):
+        tipo = "O número NÃO é PRIMO"
+        divisor = i
+        break #Encerra o loop
+    i+=1
+print(tipo)
+print(f'O menor divisor é: {divisor}' if divisor > 0 else '')
+
