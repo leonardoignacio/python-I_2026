@@ -15,3 +15,24 @@
   Comandos utilizados:
   Variáveis, if / elif / else
 """
+from os import system, name
+system('cls') if(name=='nt') else system('clear')
+
+print ('***CALCULADORA DE IMC***')
+peso=int(input('Informe o seu peso em KG: '))
+altura=float(input('Agora informe a sua altura em metros: '))
+imc = peso/(altura**2)
+print(f'O seu IMC é de {imc:.2f}')
+if (imc<18.5):
+    resultado='Abaixo do Peso'
+elif (imc<25):
+    resultado='Peso Normal (Eutrofia)'
+elif(imc<30):
+    resultado='Sobreeso'
+elif (imc<35):
+    resultado='Obesidade grau I'
+elif (imc<40):
+    resultado='Obesidade grau II'
+else:
+    resultado='Obesidade extrama'
+print(resultado)
