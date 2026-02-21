@@ -11,3 +11,6 @@ from os import system, name
 system('cls') if(name == 'nt') else system('clear')
 # tupla é criada com () e não pode ter seus dados alterados
 # lista é criada com [] e pode ter seus dados alterados
+unidades = ('zero','um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove')
+dezenas = ('dez','onze', 'doze', 'trêze', 'quatorze', 'quinze', 'dezesseis', 'dezessete', 'dezoito', 'dezenove')
+rasos=('','','vinte', 'trinta', 'quarenta', 'cinquenta', 'sessenta', 'setenta','oitenta', 'noventa')
