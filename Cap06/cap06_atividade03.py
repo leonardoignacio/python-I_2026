@@ -9,8 +9,7 @@
   Biblioteca math, funções ceil, fabs, floor, fmod, trunc
 """
 import math
-# use o comando help(biblioteca) para visualizar a sua ajuda
-help(math)
+
 # inteiro para cima
 print(math.ceil(4.2))
 print(math.ceil(4.8))
@@ -24,3 +23,7 @@ print(math.fmod(9, 4))
 print(math.sqrt(36))
 # não faz parte da bibilioteca math, é usado para arredondar um número.
 print(round(3.988, 1))
+print(round(3.916, 2))
+
+# use o comando help(biblioteca) para visualizar a sua ajuda
+help(math)
