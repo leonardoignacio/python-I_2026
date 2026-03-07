@@ -8,3 +8,10 @@
   Comandos utilizados:
   Classe, __init__, __str__, Propriedades e Metodos de uma classe
 """
+from cap07_atividade02_classe import Recibo
+from os import system, name
+system('cls') if(name == 'nt') else system('clear')
+
+nome = input('Informe a o nome: ')
+dados = Recibo(nome)
+valor = float(input('Informe o valor: '))
