@@ -15,8 +15,10 @@ class Recibo:
         self.nome = nome
         self._valor = 0
         self._descricao = '' 
+    
     def descricao(self, value):
         self._descricao = value
+    
     @property
     def valor(self):
         return(self._valor)

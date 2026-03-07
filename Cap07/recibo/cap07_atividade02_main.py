@@ -10,8 +10,15 @@
 """
 from cap07_atividade02_classe import Recibo
 from os import system, name
-system('cls') if(name == 'nt') else system('clear')
+def limparTela():
+  system('cls') if(name == 'nt') else system('clear')
 
+limparTela()
 nome = input('Informe a o nome: ')
 dados = Recibo(nome)
-valor = float(input('Informe o valor: '))
+v = float(input('Informe o valor: '))
+d = input('Informe a descrição: ')
+dados.descricao(d) #Sem utilização do decorador
+dados.valor = v # Com a utilização do decorador setter
+limparTela()
+print(dados)
