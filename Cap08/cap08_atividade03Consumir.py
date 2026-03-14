@@ -16,7 +16,8 @@ prod = tabProd()
 
 dicCategoria = cat.dicCat()
 listaProduto = prod.listProd()
-
+print(dicCategoria)
+print(listaProduto)
 relatorio = open("relatorio.txt", mode="w", encoding="utf-8")
 for e in dicCategoria:
   titulo = f'{dicCategoria[e][0].upper()}\n{dicCategoria[e][1]}\n\nProdutos\n'
@@ -34,7 +35,6 @@ for e in dicCategoria:
     i+=1
   divisor = ' Categoria '.center(80,"*")
   relatorio.write(divisor + '\n' + titulo + lista + '\n\n')
-
 
 categorias = f'Total de Categorias: {len(dicCategoria):>4}'
 produtos = f'Total de Produtos: {len(listaProduto):>4}' 
