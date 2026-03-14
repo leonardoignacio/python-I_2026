@@ -3,12 +3,11 @@
   Criando um Dicionário
 
   Objetivos:
-  Nesta atividade você vai abrir um arquivo e criar um dicionário, o dicionário no Python 
-  é muito utilizado quando queremos armazenar dados de forma organizada e que possuam 
-  identificação única como num banco de dados.
+  Nesta atividade você vai abrir um arquivo e criar um dicionário, o dicionário no Python é muito utilizado quando queremos armazenar dados de forma organizada e que possuam identificação única como num banco de dados.
 
   Comandos utilizados:
   Dicionário {}, Biblioteca OS, Metodos de string strip() e split()
+
 """
 from os import system, name
 import os.path
@@ -18,11 +17,10 @@ arquivo = 'categorias.csv'
 categorias = open(arquivo, 'r', encoding="utf-8")
 
 dicCategoria = {}
-
 for line in categorias:
   colunas = line.strip().split(";")
   # criar uma lista para as informações do dicionário
-  dados = [colunas[1], colunas[2]]
+  dados = [colunas[1], colunas[2]] 
   dicCategoria[colunas[0]] = dados
 categorias.close()
 

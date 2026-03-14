@@ -10,7 +10,6 @@
   Classe, Abrir Arquivo, Dicionário
 """
 class tabCat:
-
   def dicCat(self):
     arquivo = 'categorias.csv'
     categorias = open(arquivo, 'r', encoding="utf-8")
@@ -21,10 +20,8 @@ class tabCat:
       dicCategoria[colunas[0]] = dados
     categorias.close()
     return dicCategoria
-
-
-class tabProd:
   
+class tabProd:
   def listProd(self):
     arquivo = 'produtos.csv'
     produtos = open(arquivo, 'r', encoding="utf-8")
