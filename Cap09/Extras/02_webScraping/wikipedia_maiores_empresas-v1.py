@@ -28,7 +28,7 @@ try:
         for linha in linhas[1:6]:
             colunas = linha.find_all("td")
             if len(colunas) >= 2:
-                nome = colunas[1].get_text(strip=True)
+                nome = colunas[2].get_text(strip=True)
                 print(f"-> Empresa: {nome}")
     else:
         print("Tabela não encontrada.")
@@ -36,4 +36,4 @@ try:
 except Exception as e:
     print(f"Erro na execução: {e}")
 
-print("\n--- Extração Finalizada ---")
+input("\n--- Extração Finalizada ---")

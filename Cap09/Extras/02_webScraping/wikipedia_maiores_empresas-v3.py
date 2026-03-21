@@ -43,7 +43,7 @@ class WikipediaETL:
         """Fase 2: Transformação (ETL)"""
         logging.info("Higienizando dados...")
         # Seleciona e renomeia
-        self.df = self.df[[1, 3, 4]] # Posições: Ranking Global, Nome, Receita
+        self.df = self.df[[2, 3, 4]] # Posições: Ranking Global, Nome, Receita
         self.df.columns = ['Empresa', 'Receita_BUSD', 'Lucro_BUSD']
         
         # Converte strings numéricas (ex: "124,17" -> 124.17)

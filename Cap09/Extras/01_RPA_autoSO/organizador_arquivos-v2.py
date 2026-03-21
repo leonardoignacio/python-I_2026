@@ -55,4 +55,4 @@ def organizar_downloads():
 if __name__ == "__main__":
     print("🚀 Iniciando a organização da pasta Downloads...")
     organizar_downloads()
-    print("✅ Processo concluído.")
+    input("✅ Processo concluído.")

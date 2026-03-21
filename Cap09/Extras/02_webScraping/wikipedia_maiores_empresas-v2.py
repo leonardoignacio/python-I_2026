@@ -61,3 +61,4 @@ def executar_scraping():
 
 if __name__ == "__main__":
     executar_scraping()
+    input("Enter para finalizar")
